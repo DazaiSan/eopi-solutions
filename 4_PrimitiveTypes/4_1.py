@@ -45,7 +45,7 @@ def mod_by_power_2(x, div):
 
 # 3. Test if x is a power of 2
 def is_power_2(x):
-    return not (x & 1)
+    return x & (x - 1) == 0
 
 
 if __name__ == "__main__":
